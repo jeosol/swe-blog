@@ -1,0 +1,79 @@
+#baseurl      = "http://jeoblog.s3-website-us-west-2.amazonaws.com/" #https://s3-us-west-2.amazonaws.com/jeoblog/"#
+baseurl      = "http://tdba-info.s3-website-us-west-2.amazonaws.com/" #https://s3-us-west-2.amazonaws.com/jeoblog/"#
+#baseurl      = "http://jeosol.github.io/"
+languageCode = "en-us"
+title        = "TDBA" #LambdaRose"
+#theme        = "blackburn"
+theme        = "mainroad"
+author       = "Jerome Onwunalu"
+copyright    = "&copy; 2017. Jerome Onwunalu All rights reserved."
+canonifyurls = true
+paginate     = 10
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/index.html"
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  # Shown in the home page
+  email = "jeronwunalu@gmail.com"
+  subtitle = ""#A Hugo Theme"
+  brand = "TDBA"
+  googleAnalytics    = "UA-77771622-1"
+  googleAnalyticsaws = "UA-77771622-2"
+  disqus = "jeosol"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat  = "02 Jan 2006, 15:04"
+
+  # Enable global Latex  math rendering?
+  math = false
+
+  #Link custom CSS and JS assets (relative to /static/css and /static/js respectively
+  custom_js   = ["jquery-1.12.3.min.js", "toc.js", "jeosol.js"]
+  custom_css  = ["jquery.tocify.css", "jeosol.css", "toc.css"]
+
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 2
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 3
+    url = "/contact/"
+[Params.widgets]
+    search = true # Enable "search widget"
+    recent_articles = true # Enable "recent articles" widget
+    recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget 
+[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  twitter       = "tdba-info"
+  facebook      = "*"
+  instagram     = "*"
+# github        = "jeosol"
+#  stackoverflow = "*"
+  linkedin      = "jeromeonwunalu"

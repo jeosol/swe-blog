@@ -1,0 +1,41 @@
+{{$maxindex := 4}}
+{{$datapath :=  .Site.Data.posts.petroleum.watercutpred }}
+{{$scenario1 := index $datapath (.Get 0) }}
+{{$scenario2 := index $datapath (.Get 1) }}
+{{$colheader1 := (.Get 2)}}
+{{$colheader2 := (.Get 3)}}
+{{$figurenum    := (.Get 4)}}
+
+{{$labels := split (.Get 5) " "}}
+{{$labels2 := split (.Get 6) " "}}
+
+<!--
+<ul>
+{{range $i := (seq 0 $maxindex) }}
+  <li>{{index $labels $i}}</li>
+{{end}}
+</ul>
+-->
+
+
+  {{range $ii,$i := (seq 1 $maxindex) }}  
+      {{$data1 := index $scenario1 (index $scenario1.cases $i) }}
+      {{$data2 := index $scenario2 (index $scenario2.cases $i) }}
+      {{$data1fig := (index $data1.satprofiles 0) }}
+      {{$data2fig := (index $data2.satprofiles 0) }}
+      {{$casename := $data1.casename }}
+        <div class="container-fluid">
+            <div class= "row">
+                <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 figure">
+                   <a id={{$figurenum}}{{index $labels $ii}}></a>
+                   <a href={{$data1fig}}><img src={{$data1fig}} class="img-responsive center-block" alt="Water saturation profiles for {{$casename}} with Kv/Kh = 0.0"/></a>   
+                   <p class="figure-caption">Figure {{$figurenum}}({{index $labels $ii}}): Water saturation profiles for case "{{$casename}}" ({{$colheader1}})</p> 
+                   <hr> 
+                   <a id={{$figurenum}}{{index $labels2 $ii}}></a>
+                  <a href={{$data2fig}}><img src={{$data2fig}} class="img-responsive center-block" alt="Water saturation profiles for {{$casename}} with Kv/Kh = 0.1"/></a>
+                   <p class="figure-caption">Figure {{$figurenum}}({{index $labels2 $ii}}): Water saturation profiles for case "{{$casename}}" ({{$colheader2}})</p>
+                </div>              
+            </div>
+        </div>
+{{end}}
+

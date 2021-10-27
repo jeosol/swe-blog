@@ -1,0 +1,18 @@
+casename = "Fining Up"
+satmaps = [
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-1.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-2.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-3.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-4.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-5.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-6.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-7.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-8.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-9.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-10.png", 
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-map-timestep-11.png", 
+]
+satmapgif = "/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satmaps/finingup-satmaps.gif"
+satprofiles = [
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/finingup/satprofiles/finingup-saturation-profile.png",
+]

@@ -1,0 +1,11 @@
+{{ $data := index .Site.Data.post.petroleum.watercutpred.kvkh0pt0 (.Get 0) }}
+<div class="sim-case">
+  <p class="text-center"> {{ $data.casename }} </p>
+  {{ range $data.figures }}
+  <div class="sat-map">
+    <a href="{{ . }}"> <img src="{{ . }}"/> </a>
+  </div>
+  {{ end }}
+</div>
+
+

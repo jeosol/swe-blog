@@ -1,0 +1,6 @@
+{{ $data := index .Site.Data (.Get 0) }}
+<ul>
+{{ range $data.cases  }}
+<li> {{ . }} </li>
+{{ end }}
+</ul>

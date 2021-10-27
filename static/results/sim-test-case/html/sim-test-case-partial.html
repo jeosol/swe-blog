@@ -1,0 +1,276 @@
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class='well well-lg' style='background-color: white;'>
+        <div class='col-md-12' style='color: white; background-color: #f44242;'>
+          <h2 class='text-center'>Simulation Case: Natural (Original) Reservoir Section
+          </h2>
+        </div>
+        <div class='col-md-12'>
+<br />
+<br />
+          <a name='top'></a>
+          <a name='table-of-contents'></a>
+          <p class='text-left' style='font-size: 30px;'>Table of Contents
+          </p>
+          <ol>
+<li style='font-size: 30px;'>
+  <a href='#simulation-case-information' style='font-size: 25px; color:#f44242;'>Simulation Case Information             
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#field-production-summary' style='font-size: 25px; color:#f44242;'>Field Production Summary                
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#well-production-injection-summary' style='font-size: 25px; color:#f44242;'>Well Production-Injection Summary       
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#well-rock-properties-vs.-depth' style='font-size: 25px; color:#f44242;'>Well Rock Properties vs. Depth          
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#relative-permeability-curves' style='font-size: 25px; color:#f44242;'>Relative Permeability Curves            
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#fractional-flow-curves' style='font-size: 25px; color:#f44242;'>Fractional Flow Curves                  
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#saturation-maps' style='font-size: 25px; color:#f44242;'>Saturation Maps                         
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#saturation-profiles' style='font-size: 25px; color:#f44242;'>Saturation Profiles                     
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#economic-plots' style='font-size: 25px; color:#f44242;'>Economic plots                          
+  </a>
+</li>
+<br />
+<li style='font-size: 30px;'>
+  <a href='#field-production-plots' style='font-size: 25px; color:#f44242;'>Field Production Plots                  
+  </a>
+</li>
+<br />
+          </ol>
+        </div>
+        <div class='col-md-12'>
+<br />
+<br />
+<br />
+<br />
+<p>
+  <a name='simulation-case-information'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color:#f44242'><h2>Simulation Case Information</h2></div><div class='panel-body text-center'><pre>
+--  ---------------------------------------------------------------------------------------------------
+--                        : Generated header                                                           
+--  Version               : commit 9113a568bc154567d0ba68d7bf88f679a1fe6c8d (2017-11-19 07:37:56 -0600)
+--  Computer              : Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz X86-64 Linux 4.4.92-31-default     
+--  Username              : Jerome                                                                     
+--  Fullname              : Jerome E. Onwunalu                                                         
+--  Title                 : Simulation Case: Natural (Original) Reservoir Section                      
+--  Project               : Tutorial Series: Waterflood Performance Evaluation                         
+--  Scenario              : tutorial                                                                   
+--  Casename              : SIM-TEST-CASE                                                              
+--  Date                  : Sun, 19 Nov 2017 11:33:23 -0600                                            
+--  ---------------------------------------------------------------------------------------------------
+
+</pre></div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='field-production-summary'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color:#f44242'><h2>Field Production Summary</h2></div><div class='panel-body text-center'><div class='container-fluid' style='width: 1000px'><table id='tableid' style='height: 10px' class='table table-responsive tableclass  table-hover '><colgroup>
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" ></colgroup><thead><tr class='header-class'><th class='text-center thead-classes'>No</th><th class='text-center thead-classes'>Casename</th><th class='text-center thead-classes'>STOIIP</th><th class='text-center thead-classes'>COP</th><th class='text-center thead-classes'>WBT</th><th class='text-center thead-classes'>WBT</th><th class='text-center thead-classes'>Oil-RF(@BT)</th><th class='text-center thead-classes'>QOP(@BT)</th><th class='text-center thead-classes'>Oil-RF</th><th class='text-center thead-classes'>QOP</th><th class='text-center thead-classes'>WCUT</th><th class='text-center thead-classes'>WOR</th></tr></thead><thead><tr class='header-class'><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'>(MMSTB)</th><th class='text-center thead-classes'>(MMSTB)</th><th class='text-center thead-classes'>(DAYS)</th><th class='text-center thead-classes'>(YEARS)</th><th class='text-center thead-classes'>(%)</th><th class='text-center thead-classes'>(STB/D)</th><th class='text-center thead-classes'>(%)</th><th class='text-center thead-classes'>(STB/D)</th><th class='text-center thead-classes'>(Fraction)</th><th class='text-center thead-classes'>(STB/STB)</th></tr></thead><tbody><tr><td class=' text-center'>  1</td><td class=' text-center'>SIM-TEST-CASE</td><td class=' text-center'>59.1456</td><td class=' text-center'>38.7381</td><td class=' text-center'>4335.5</td><td class=' text-center'> 11.87</td><td class=' text-center'>52.90</td><td class=' text-center'> 7164.4</td><td class=' text-center'>65.50</td><td class=' text-center'> 1268.2</td><td class=' text-center'>0.82</td><td class=' text-center'>   4.44</td></tr></tbody><tfoot></tfoot></table></div></div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='well-production-injection-summary'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color:#f44242'><h2>Well Production-Injection Summary</h2></div><div class='panel-body text-center'><div class='container-fluid' style='width: 1000px'><table id='tableid' style='height: 10px' class='table table-responsive tableclass  table-hover '><colgroup>
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" >
+ <col class="class-id" ></colgroup><thead><tr class='header-class'><th class='text-center thead-classes'>No</th><th class='text-center thead-classes'>Name</th><th class='text-center thead-classes'>I</th><th class='text-center thead-classes'>J</th><th class='text-center thead-classes'>K1</th><th class='text-center thead-classes'>K2</th><th class='text-center thead-classes'>Well-Type</th><th class='text-center thead-classes'>Fluid</th><th class='text-center thead-classes'>COP</th><th class='text-center thead-classes'>CGP</th><th class='text-center thead-classes'>CWP</th><th class='text-center thead-classes'>CLP</th><th class='text-center thead-classes'>CWI</th></tr></thead><thead><tr class='header-class'><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'></th><th class='text-center thead-classes'>(MMSTB)</th><th class='text-center thead-classes'>(MMMSCF)</th><th class='text-center thead-classes'>(MMSTB)</th><th class='text-center thead-classes'>(MMSTB)</th><th class='text-center thead-classes'>(MMSTB)</th></tr></thead><tbody><tr><td class=' text-center'>  1</td><td class=' text-center'>INJ-1     </td><td class=' text-center'>  1</td><td class=' text-center'>  1</td><td class=' text-center'>  1</td><td class=' text-center'> 20</td><td class=' text-center'>Injector  </td><td class=' text-center'>Water     </td><td class=' text-center'>  0.00000</td><td class=' text-center'>  0.00000</td><td class=' text-center'>  0.00000</td><td class=' text-center'>  0.00000</td><td class=' text-center'> 49.93272</td></tr><tr><td class=' text-center'>  2</td><td class=' text-center'>PROD-1    </td><td class=' text-center'>100</td><td class=' text-center'>  1</td><td class=' text-center'>  1</td><td class=' text-center'> 20</td><td class=' text-center'>Producer  </td><td class=' text-center'>Oil       </td><td class=' text-center'> 38.73811</td><td class=' text-center'>  0.00000</td><td class=' text-center'> 13.24870</td><td class=' text-center'> 51.98680</td><td class=' text-center'>  0.00000</td></tr></tbody><tfoot></tfoot></table></div></div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='well-rock-properties-vs.-depth'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Well Rock Properties vs. Depth</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/grid/wells//SIM-TEST-CASE-INJ-1-permeability-depth-profile.png'><img src='results/plots/grid/wells//SIM-TEST-CASE-INJ-1-permeability-depth-profile.png' style='width: 100%' alt='Figure 1: Well INJ-1 permeability-depth profile' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 1: Well INJ-1 permeability-depth profile</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:50:26 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/grid/wells//SIM-TEST-CASE-PROD-1-permeability-depth-profile.png'><img src='results/plots/grid/wells//SIM-TEST-CASE-PROD-1-permeability-depth-profile.png' style='width: 100%' alt='Figure 2: Well PROD-1 permeability-depth profile' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 2: Well PROD-1 permeability-depth profile</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:50:26 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='relative-permeability-curves'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Relative Permeability Curves</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6 col-offset-3' style='margin: auto;'><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/saturations/saturation-functions/relperms//SIM-TEST-CASE-oil-water-relperm.png'><img src='results/plots/saturations/saturation-functions/relperms//SIM-TEST-CASE-oil-water-relperm.png' style='width: 100%' alt='Figure 3: Oil-Water Relative Permeabilities' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 3: Oil-Water Relative Permeabilities</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:51:03 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='fractional-flow-curves'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Fractional Flow Curves</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6 col-offset-3' style='margin: auto;'><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/saturations/saturation-functions/fractional-flow/SIM-TEST-CASE-fractional-flow.png'><img src='results/plots/saturations/saturation-functions/fractional-flow/SIM-TEST-CASE-fractional-flow.png' style='width: 100%' alt='Figure 4: Oil-Water Fractional Flow Curves' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 4: Oil-Water Fractional Flow Curves</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:51:03 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='saturation-maps'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Saturation Maps</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6 col-offset-3' style='margin: auto;'><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/saturations/saturation-maps/SIM-TEST-CASE-saturation-maps.gif'><img src='results/plots/saturations/saturation-maps/SIM-TEST-CASE-saturation-maps.gif' style='width: 100%' alt='Figure 5: Water Saturation Maps' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 5: Water Saturation Maps</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:51:03 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='saturation-profiles'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Saturation Profiles</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6 col-offset-3' style='margin: auto;'><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/saturations/saturation-profiles/SIM-TEST-CASE-saturation-profile.gif'><img src='results/plots/saturations/saturation-profiles/SIM-TEST-CASE-saturation-profile.gif' style='width: 100%' alt='Figure 6: Saturation Profiles vs. Injector-Producer Distance' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 6: Saturation Profiles vs. Injector-Producer Distance</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:50:44 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='economic-plots'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Economic plots</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/economics/SIM-TEST-CASE-field-production-profile.png'><img src='results/plots/economics/SIM-TEST-CASE-field-production-profile.png' style='width: 100%' alt='Figure 7: Field Production Profile' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 7: Field Production Profile</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:51:04 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/economics/SIM-TEST-CASE-economic-parameters.png'><img src='results/plots/economics/SIM-TEST-CASE-economic-parameters.png' style='width: 100%' alt='Figure 8: Economic Parameters' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 8: Economic Parameters</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:51:04 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/economics/SIM-TEST-CASE-npv-profile.png'><img src='results/plots/economics/SIM-TEST-CASE-npv-profile.png' style='width: 100%' alt='Figure 9: Discounted Cash Flow and NPV' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 9: Discounted Cash Flow and NPV</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 08:51:04 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+<p>
+  <a name='field-production-plots'></a>
+</p>
+<p>
+  <a href='#top' style='color: #f44242'>Top
+  </a>
+</p><div class='panel panel-success'><div class='panel-heading text-center' style='color:white; background-color: #f44242'><h3>Field Production Plots</h3></div>
+<div class='panel-body text-center'>
+  <div class='container-fluid'>
+    <div class='row'>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-watercut-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-watercut-vs-time.png' style='width: 100%' alt='Figure 10: Field Watercut vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 10: Field Watercut vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:21 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-watercut-vs-cop.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-watercut-vs-cop.png' style='width: 100%' alt='Figure 11: Field Watercut vs. Cumulative Oil Produced.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 11: Field Watercut vs. Cumulative Oil Produced.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:21 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-oil-prod-rates-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-oil-prod-rates-vs-time.png' style='width: 100%' alt='Figure 12: Field Oil Production Rate vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 12: Field Oil Production Rate vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:21 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-water-prod-rates-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-water-prod-rates-vs-time.png' style='width: 100%' alt='Figure 13: Field Water Production Rates vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 13: Field Water Production Rates vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:21 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-oil-and-water-prod-rates-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-oil-and-water-prod-rates-vs-time.png' style='width: 100%' alt='Figure 14: Field Oil and Water Production Rates vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 14: Field Oil and Water Production Rates vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-water-oil-ratio-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-water-oil-ratio-vs-time.png' style='width: 100%' alt='Figure 15: Field Water-Oil Ratio vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 15: Field Water-Oil Ratio vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-liquid-prod-rates-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-liquid-prod-rates-vs-time.png' style='width: 100%' alt='Figure 16: Field Liquid Production Rates vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 16: Field Liquid Production Rates vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-water-inje-rates-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-water-inje-rates-vs-time.png' style='width: 100%' alt='Figure 17: Field Water Injection Rate vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 17: Field Water Injection Rate vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-liquid-prod-water-inje-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-liquid-prod-water-inje-vs-time.png' style='width: 100%' alt='Figure 18: Field Liquid Production/Water Injection Rates vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 18: Field Liquid Production/Water Injection Rates vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-cum-oil-prod-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-cum-oil-prod-vs-time.png' style='width: 100%' alt='Figure 19: Field Cumulative Oil Produced vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 19: Field Cumulative Oil Produced vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-cum-water-prod-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-cum-water-prod-vs-time.png' style='width: 100%' alt='Figure 20: Field Cumulative Water Produced vs. Time.' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 20: Field Cumulative Water Produced vs. Time.</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-cum-water-inje-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-cum-water-inje-vs-time.png' style='width: 100%' alt='Figure 21: Field Cumulative Water Injected' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 21: Field Cumulative Water Injected</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:22 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-pressure-vs-time.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-pressure-vs-time.png' style='width: 100%' alt='Figure 22: Field Pressure vs. Time' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 22: Field Pressure vs. Time</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:23 -0600</h5></div></div></div>
+</div>
+<div class='col-sm-6' style=''><div class='panel panel-default'><div class='panel-body'><div class='container-fluid'><div class='row'><div class='col-sx-12'><a href='results/plots/production/field/SIM-TEST-CASE-field-oil-recovery.png'><img src='results/plots/production/field/SIM-TEST-CASE-field-oil-recovery.png' style='width: 100%' alt='Figure 23: Field Oil Recovery vs. Time' /></a><br /><br /><div class='col-sx-12'><h5 class='text-center'>Figure 23: Field Oil Recovery vs. Time</h5></div></div></div></div></div><div class='panel-footer text-center'><div class='col-sx-12'><h5>Last updated: Sun, 19 Nov 2017 11:11:23 -0600</h5></div></div></div>
+</div>
+    </div>
+  </div>
+</div><div class='panel-footer text-center'><p>Last updated: Sun, 19 Nov 2017 11:33:23 -0600</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

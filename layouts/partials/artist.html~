@@ -1,0 +1,7 @@
+{{ range $.Site.Data.jazz.bass }}
+<ul>
+  {{ range .discography }}
+  <li>{{ . }}</li>
+  {{ end }}
+</ul>
+{{ end }}

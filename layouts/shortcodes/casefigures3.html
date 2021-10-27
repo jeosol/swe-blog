@@ -1,0 +1,118 @@
+{{$maxindex := 11}}
+{{$datapath :=  .Site.Data.posts.petroleum.watercutpred }}
+{{$scenario := index $datapath (.Get 0) }}
+{{$scenarioname    := (.Get 1)}}
+{{$figurenum := (.Get 3)}}
+<!--
+<ul>
+{{ range $scenario.cases }}
+  <li>{{ . }} </li>
+  <li>{{ index $scenario.cases 2 }}
+  {{end}}
+</ul>
+-->
+
+{{$data1 := index $scenario (index $scenario.cases 1) }}
+{{$data2 := index $scenario (index $scenario.cases 2) }}
+{{$data3 := index $scenario (index $scenario.cases 3) }}
+{{$data4 := index $scenario (index $scenario.cases 4) }}
+
+{{$data1name   := $data1.casename}}
+{{$data1figs   := $data1.satmaps}}
+{{$data1mapgif := $data1.satmapgif}}
+{{$data2name   := $data2.casename}}
+{{$data2figs   := $data2.satmaps}}
+{{$data2mapgif := $data2.satmapgif}}
+{{$data3name   := $data3.casename}}
+{{$data3figs   := $data3.satmaps}}
+{{$data3mapgif := $data3.satmapgif}}
+{{$data4name   := $data4.casename}}
+{{$data4figs   := $data4.satmaps}}
+{{$data4mapgif := $data4.satmapgif}}
+
+<p class="figure-header"> Saturation Maps for {{$scenarioname}} </p>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 figure">
+        <p class="figure-header">{{$data1.casename}}</p>
+        <a href={{ $data1mapgif }}> <img class="fullmap"
+                                         alt="Water saturation maps for case {{$data1.casename}} and {{$scenarioname}}"
+                                         src={{ $data1mapgif }} /> </a>
+        <p class="figure-caption">Figure {{$figurenum}}(a): Water saturation maps for case "{{$data1.casename}}" and
+          {{$scenarioname}}</p>
+        <hr>
+        <p class="figure-header">{{$data2.casename}}</p>
+        <a href={{ $data2mapgif }}> <img class="fullmap"
+                                         alt="Water saturation maps for case {{$data2.casename}} and {{$scenarioname}}"
+                                         src={{ $data2mapgif }} /> </a>
+        <p class="figure-caption">Figure {{$figurenum}}(b): Water saturation maps for case "{{$data2.casename}}" and
+          {{$scenarioname}} </p>
+        <hr>
+        <p class="figure-header">{{$data3.casename}}</p>
+        <a href={{ $data3mapgif }}> <img class="fullmap"
+                                         alt="Water saturation maps for case {{$data3.casename}} and {{$scenarioname}}"
+                                         src={{ $data3mapgif }} /> </a>
+        <p class="figure-caption">Figure {{$figurenum}}(c): Water saturation maps for case "{{$data3.casename}}" and
+          {{$scenarioname}} </p>
+        <hr>
+        <p class="figure-header">{{$data4.casename}}</p>
+        <a href={{ $data4mapgif }}> <img class="fullmap"
+                                         alt="Water saturation maps for case {{$data4.casename}} and {{$scenarioname}}"
+                                         src={{ $data4mapgif }} /> </a>
+        <p class="figure-caption">Figure {{$figurenum}}(d): Water saturation maps for case "{{$data4.casename}}" and
+          {{$scenarioname}} </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="visible-lg">
+            <a href="#{{ (.Get 2) }}" class="btn btn-info"  data-toggle="collapse"> Show/Hide Discrete Maps</a>
+            <div id="{{ (.Get 2) }}" class="collapse">
+                <div class="container-fluid figure">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p class="figure-header-small">{{$data1.casename}}</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="figure-header-small ">{{$data2.casename}}</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="figure-header-small center-block">{{$data3.casename}}</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="figure-header-small center-block">{{$data4.casename}}</p>
+                        </div>
+                    </div>
+
+
+                    {{range $i, $sequence := (seq $maxindex) }}
+                    <div class="row">
+                        <div class=" col-lg-3">
+                          <a href={{ (index $data1figs $i) }}> <img src={{ (index $data1figs $i) }}
+                                                                    alt="Water saturation map for {{$data1.casename}}"
+                                                                    class="img-xresponsive img-4-row "/> </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href={{ (index $data2figs $i) }}> <img src={{ (index $data2figs $i) }}
+                                                                    alt="Water saturation map for {{$data1.casename}}"
+                                                                    class="img-rxesponsive img-4-row"/> </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href={{ (index $data3figs $i) }}> <img src={{ (index $data3figs $i) }}
+                                                                    alt="Water saturation map for {{$data1.casename}}"
+                                                                    class="imxg-responsive img-4-row"/> </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href={{ (index $data4figs $i) }}> <img src={{ (index $data4figs $i) }}
+                                                                    alt="Water saturation map for {{$data1.casename}}"
+                                                                    class="img-respxonsive img-4-row"/> </a>
+                        </div>
+                    </div>
+                    {{end}}
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

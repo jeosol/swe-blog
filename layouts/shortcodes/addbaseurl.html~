@@ -1,0 +1,3 @@
+{{ $rest := (.Get 0) }}
+<a href={{$baseurl}}/$rest> <img src={{$figure1}}/></a>
+

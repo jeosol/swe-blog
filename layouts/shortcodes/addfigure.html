@@ -1,0 +1,7 @@
+{{ $figure1 := (.Get 0) }}
+{{ $caption := (.Get 1) }}
+<div class="figure">
+  <a href={{$figure1}}> <img src={{$figure1}}/></a>
+  <p class="figure-caption">{{$caption}}</p>
+</div>
+

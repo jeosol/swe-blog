@@ -1,0 +1,160 @@
+<div class="sim-case">
+    <p class="text-center"> Natural Ordering</p>
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-1.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-2.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-3.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-4.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-5.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-6.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-7.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-8.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-9.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-10.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-map-timestep-11.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/natural-1a/natural-1a-satmaps.gif"/>
+    </div> 
+</div>
+<div class="sim-case">
+    <p class="text-center"> Coarse-Down</p>
+    <div class="sat-map">
+    <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-1.png"/>
+        </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-2.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-3.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-4.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-5.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-6.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-7.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-8.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-9.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-10.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-map-timestep-11.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-up/coarse-up-satmaps.gif"/>
+            </div> 
+    </div>
+
+<div class="sim-case">
+    <p class="text-center"> Coarse-Up</p>
+    <div class="sat-map">
+    <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-1.png"/>
+        </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-2.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-3.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-4.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-5.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-6.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-7.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-8.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-9.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-10.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-map-timestep-11.png"/>
+            </div> 
+            <div class="sat-map">
+                <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/coarse-down/coarse-down-satmaps.gif"/>
+            </div> 
+    </div>
+<div class="sim-case">
+    <p class="text-center"> Combination</p>
+    <div class="sat-map">
+    <a href="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-1.png">
+        <img
+    src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-1.png"/>
+    </a>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-2.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-3.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-4.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-5.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-6.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-7.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-8.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-9.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-10.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-map-timestep-11.png"/>
+    </div> 
+    <div class="sat-map">
+        <img src="/assets/petroleum/posts/watercutpred/images/kvkh-0.0/combination/combination-satmaps.gif"/>
+    </div> 
+</div>

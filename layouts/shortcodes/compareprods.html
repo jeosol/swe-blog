@@ -1,0 +1,118 @@
+{{$datapath :=  .Site.Data.posts.petroleum.watercutpred }}
+{{$prodinfo := index $datapath (.Get 0) }}
+{{$colheader1 := (.Get 1)}}
+{{$colheader2 := (.Get 2)}}
+{{$figurenum  := (.Get 3)}}
+
+{{$wcvstime := $prodinfo.wcvstime }}
+{{$wcvscop  := $prodinfo.wcvscop  }}
+{{$qopvstime := $prodinfo.qopvstime }}
+{{$copvstime := $prodinfo.copvstime }}
+
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 figure">          
+          <!-- <p class="figure-col-header"> {{$colheader1}} </p> -->
+          <a id="{{$figurenum}}a"></a>
+          <a href={{ index $wcvstime 0 }}><img src={{index $wcvstime 0 }} 
+                                               alt="Watercut vs. time for scenario {{$colheader1}}"
+                                               class="img-responsive center-block"/></a>
+          <p class="figure-caption">Figure {{$figurenum}}(a): Watercut vs. time for {{$colheader1}}. </p>
+          <hr>
+          <a id="{{$figurenum}}b"></a>
+          
+          <a href={{ index $wcvstime 1 }}><img src={{ index $wcvstime 1 }} 
+                                               alt="Watercut vs. time for scenario {{$colheader2}}"
+                                               class="img-responsive center-block"/></a>                 
+          <p class="figure-caption">Figure {{$figurenum}}(b): Watercut vs. time for {{$colheader2}} (green line, Kv/Kh = 0.0).</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 figure">  
+          <a id="{{$figurenum}}c"></a>
+          <a href={{ index $wcvscop 0 }}><img src={{index $wcvscop 0 }}
+                                              alt="Watercut vs. cumulative oil produced for scenario {{$colheader1}}"
+                                              class="img-responsive center-block"/></a>
+          <p class="figure-caption">Figure {{$figurenum}}(c): Watercut vs. cumulative oil produced for {{$colheader1}}.</p>
+            <hr>            
+          <a id="{{$figurenum}}d"></a>
+            <a href={{ index $wcvscop 1 }}><img src={{ index $wcvscop 1 }} 
+                                                alt="Watercut vs. cumulative oil produced for scenario {{$colheader2}}"
+                                                class="img-responsive center-block"/></a>
+            <p class="figure-caption">Figure {{$figurenum}}(d): Watercut vs. cumulative oil produced for {{$colheader2}} (green line, Kv/Kh = 0.0).</p>
+      </div>              
+    </div>
+    
+    <div class="row">
+      <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 figure">   
+          <a id="{{$figurenum}}e"></a>
+          <a href={{ index $qopvstime 0 }}><img src={{index $qopvstime 0 }} 
+                                                alt="Oil production rate vs. time for scenario {{$colheader1}}"
+                                                class="img-responsive center-block"/></a>
+          <p class="figure-caption">Figure {{$figurenum}}(e): Oil production rate vs. time for {{$colheader1}}.</p>
+          <hr>
+          <a id="{{$figurenum}}f"></a>
+          <a href={{ index $qopvstime 1 }}><img src={{ index $qopvstime 1 }} 
+                                                alt="Oil production rate vs. time for scenario {{$colheader2}}"
+                                                class="img-responsive center-block"/></a>
+          <p class="figure-caption">Figure {{$figurenum}}(f): Oil production rate vs. time for {{$colheader2}} (green line, Kv/Kh = 0.0). </p>
+      </div>              
+    </div>
+    
+    <div class="row">
+      <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 figure">    
+          <a id="{{$figurenum}}g"></a>
+          <a href={{ index $copvstime 0 }}><img src={{index $copvstime 0 }} 
+                                                alt="Cumulative oil produced vs. time for scenario {{$colheader1}}"
+                                                class="img-responsive center-block"/></a>
+          <p class="figure-caption">Figure {{$figurenum}}(g): Cumulative oil produced vs. time for {{$colheader1}}.</p>
+          <hr>
+          <a id="{{$figurenum}}h"></a>
+          <a href={{ index $copvstime 1 }}><img src={{ index $copvstime 1 }} 
+                                                alt="Cumulative oil produced vs. time for {{$colheader2}}"
+                                                class="img-responsive center-block"/></a>
+          <p class="figure-caption">Figure {{$figurenum}}(h): Cumulative oil produced vs. time for {{$colheader2}} (green line, Kv/Kh = 0.0).</p>
+      </div>              
+    </div>
+    
+
+
+
+<!--
+
+<div class="figure-group">
+  <div class="two-col">
+    <p class="figure-col-header"> {{$colheader1}} </p>
+  </div>
+  <div class="two-col">
+    <p class="figure-col-header"> {{$colheader2}} </p>
+  </div>
+  {{ range $wcvstime }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(a): Comparison of watercut vs. time plots for Kv/Kh = 0.0 and Kv/Kh = 0.1.</p>
+  {{ range $wcvscop }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(b): Comparison of watercut vs. time plots for Kv/Kh = 0.0 and Kv/Kh = 0.1.</p>
+  {{ range $qopvstime }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(c): Comparison of watercut vs. time plots for Kv/Kh = 0.0 and Kv/Kh = 0.1.</p>
+  {{ range $copvstime }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(d): Comparison of watercut vs. time plots for Kv/Kh = 0.0 and Kv/Kh = 0.1.</p>
+</div>
+
+-->

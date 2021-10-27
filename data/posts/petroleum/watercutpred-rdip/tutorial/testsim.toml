@@ -1,0 +1,18 @@
+casename = "testsim"
+satmaps = [
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-1.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-2.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-3.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-4.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-5.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-6.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-7.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-8.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-9.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-10.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-map-timestep-11.png", 
+]
+satmapgif = "/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satmaps/testsim-satmaps.gif"
+satprofiles = [
+"/assets/petroleum/posts/watercutpred-rdip/images//tutorial/testsim/satprofiles/saturation-profile.png",
+]

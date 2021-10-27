@@ -1,0 +1,6 @@
+{{ $data := .Site.Data.post.petroleum.watercutpred.kvkh0pt0 (.Get 0) }}
+<ul>
+  {{ range $data }}
+  <li>{{ . }} </li>
+  {{ end }}
+</ul>

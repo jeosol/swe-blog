@@ -1,0 +1,4 @@
+{{$dir       := "post/petroleum/tutorials/evaluate-waterflood"}}
+{{$name      := (.Get 0)}}
+{{$shortname := (.Get 1)}}
+<a href={{< ref {{$dir}}/{{$name}} >}}>{{$shortname}}</a>

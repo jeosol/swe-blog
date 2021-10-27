@@ -1,0 +1,79 @@
+#tocx {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    position: fixed;
+    background: #333;
+    box-shadow: inset -5px 0 5px 0px #000;
+    width: 150px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+#toc {
+    top:180px;
+    right: 0px;
+    position: fixed; 
+    /*height: 100%; */
+    background: #191818; 
+    /*box-shadow: inset -5px 0 5px 0px #000;  */
+    width: 250px;
+    padding-top: 0px;
+    color: white;
+    font-size: 1em;
+}
+
+
+#tocf {
+    top:180px;
+    right: 0px;
+    position: fixed; 
+    /*height: 100%; */
+    background: white;
+    /*box-shadow: inset -5px 0 5px 0px #000;  */
+    width: 250px;
+    padding-top: 0px;
+    color: black;
+    font-size: 1em;
+}
+
+
+
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: "circle"; /*none; */
+}
+
+#toc li {
+    padding: 5px 10px;
+}
+
+#toc a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#toc .toc-h2 {
+    padding-left: 10px;
+}
+
+#toc .toc-h3 {
+    padding-left: 20px;
+}
+
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;
+}
+
+/*
+  This style changes the color of anchor links on hover/focus
+*/
+#toc a:hover,
+#toc a:focus {
+background: #333;
+}
+

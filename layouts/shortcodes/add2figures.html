@@ -1,0 +1,15 @@
+{{ $figure1 := (.Get 0) }}
+{{ $fig1caption := (.Get 1) }}
+{{ $figure2 := (.Get 2) }}
+{{ $fig2caption := (.Get 3) }}
+<div class="figure-group">
+  <div class="figure">
+    <a href={{$figure1}}> <img src={{$figure1}}/></a>
+    <p class="figure-caption">{{$fig1caption}}</p>
+  </div>
+  <div class="figure">
+    <a href={{$figure2}}> <img src={{$figure2}}/></a>
+    <p class="figure-caption">{{$fig2caption}}</p>
+  </div>
+</div>
+

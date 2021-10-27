@@ -1,0 +1,47 @@
+{{$datapath :=  .Site.Data.posts.petroleum.watercutpred }}
+{{$prodinfo := index $datapath (.Get 0) }}
+{{$colheader1 := (.Get 1)}}
+{{$colheader2 := (.Get 2)}}
+{{$figurenum  := (.Get 3)}}
+<p>{{$prodinfo}}</p>
+
+{{$wcvstime := $prodinfo.wcvstime }}
+{{$wcvscop  := $prodinfo.wcvscop  }}
+{{$qopvstime := $prodinfo.qopvstime }}
+{{$copvstime := $prodinfo.copvstime }}
+
+<div class="figure-group">
+  <div class="two-col">
+    <p class="figure-col-header"> {{$colheader1}} </p>
+  </div>
+  <div class="two-col">
+    <p class="figure-col-header"> {{$colheader2}} </p>
+  </div>
+  {{ range $wcvstime }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(a): Comparison of watercut vs. time plots.</p>
+  {{ range $wcvscop }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(b): Comparison of watercut vs. time plots.</p>
+  {{ range $qopvstime }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(c): Comparison of watercut vs. time plots.</p>
+  {{ range $copvstime }}
+  <div class="figure two-col">
+    <a href={{ . }}><img src={{ . }} /></a>
+  </div>
+  {{end}}
+  <p class="figure-caption">Figure {{$figurenum}}(d): Comparison of watercut vs. time plots.</p>
+</div>
+
+
+

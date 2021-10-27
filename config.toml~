@@ -1,0 +1,133 @@
+#baseurl      = "http://jeoblog.s3-website-us-west-2.amazonaws.com/" #https://s3-us-west-2.amazonaws.com/jeoblog/"#
+#baseurl      = "http://tdba-info.s3-website-us-west-2.amazonaws.com/" #https://s3-us-west-2.amazonaws.com/jeoblog/"#
+#baseurl       = "http://www.onwunalu.com/"
+baseurl       = "http://onwunalu.com/"
+#baseurl      = "http://jeosol.github.io/"
+languageCode = "en-us"
+title        = "TDBA" #LambdaRose"
+#theme        = "blackburn"
+theme        = "mainroad-thedibia"
+author       = "Jerome E. Onwunalu, PhD"
+copyright    = "&copy; 2017. Jerome Onwunalu All rights reserved."
+canonifyurls = true
+paginate     = 10
+DisqusShortname="jeosol"
+#DisqusShortname="onwunalu"
+RSSlink=true
+
+[permalinks]
+#  post = "/:year/:month/:day/:filename/index.html"
+  post = "/:year/:month/:day/:slug"
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[Params]
+  description="Jerome's blog about several interests including petroleum engineering, data analytics, machine learning, programming, etc."
+  opengraph=true
+  readmore=true
+  leftsidebar=false
+  authorbox=true
+  post_navigation=true
+  postSections=["post"] # the section pages to show on home page and the recent articles widget
+  # Shown in the home page
+  email = "jeronwunalu@gmail.com"
+  subtitle = ""#A Hugo Theme"
+  brand = "TDBA"
+  googleAnalytics    = "UA-77771622-1"
+  googleAnalyticsaws = "UA-77771622-2"
+  disable_comments = false
+  
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat  = "02 Jan 2006, 15:04"
+
+  # Enable global Latex  math rendering?
+  math = false
+
+  #Link custom CSS and JS assets (relative to /static/css and /static/js respectively
+  custom_js   = ["jquery-1.12.3.min.js", "toc.js", "jeosol.js"]
+  custom_css  = ["jquery.tocify.css", "jeosol.css", "toc.css"]
+
+[Author] # used in the authorbox
+    name = "Jerome E. Onwunalu, PhD"
+    avatar="img/jerome_photo.jpg"
+    #bio="Jerome's true identity is unknown."
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = -1
+    identifier = "home"
+    url = "/"
+#  [[menu.main]]
+#    name = "Posts"
+#    pre = "<i class='fa fa-list fa-fw'></i>"
+#    weight = 1
+#    identifier = "post"
+#    url = "/post/"
+  [[menu.main]]
+    name = "Oil & Gas"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1
+    identifier = "petroleum"
+    url = "/petroleum/"
+ [[menu.main]]
+    name = "Data"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "data"
+    url = "/data/"
+ [[menu.main]]
+    name = "Optimization"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 3
+    identifier = "optimization"
+    url = "/optimization/"
+ [[menu.main]]
+    name = "Olympus"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 4
+    identifier = "olympus"
+    url = "/olympus/"
+  [[mxenu.main]]
+    name = "Tutorials"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1
+    identifier = "tutorials"
+    url = "/tutorials/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 6
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 5
+    url = "/contact/"
+[Params.widgets]
+    search = true # Enable "search widget"
+    recent_articles = true # Enable "recent articles" widget
+    recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget 
+    # Enable "Social" widget, if any of "social_*" is set a value
+      # Link your social networking accouns to the side menu
+      #   by entering your username or ID.
+      social_twitter       = "jeromeonwunalu"
+#      social_facebook      = "*"
+      instagram     = "*"
+# github        = "jeosol"
+#  stackoverflow = "*"
+      social_linkedin      = "jeromeonwunalu"
+  # social_email = "jeronwunalu@gmail.com" # change this later to jerome@onwunalu.com
+[Social]
+    twitter="jeromeonwunalu"
+    linkedin="jeromeonwunalu"
+    googleplus="108595481296213932143"
+#    facebook ="jeromeonwunalu"

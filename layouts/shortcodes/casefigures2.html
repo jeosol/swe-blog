@@ -1,0 +1,102 @@
+{{$maxindex := 11}}
+{{$datapath :=  .Site.Data.posts.petroleum.watercutpred }}
+{{$scenario := index $datapath (.Get 0) }}
+{{$title    := (.Get 1)}}
+
+<!--
+<ul>
+{{ range $scenario.cases }}
+  <li>{{ . }} </li>
+  <li>{{ index $scenario.cases 2 }}
+  {{end}}
+</ul>
+-->
+
+{{$data1 := index $scenario (index $scenario.cases 1) }}
+{{$data2 := index $scenario (index $scenario.cases 2) }}
+{{$data3 := index $scenario (index $scenario.cases 3) }}
+{{$data4 := index $scenario (index $scenario.cases 4) }}
+
+{{$data1name   := $data1.casename}}
+{{$data1figs   := $data1.satmaps}}
+{{$data1mapgif := $data1.satmapgif}}
+{{$data2name   := $data2.casename}}
+{{$data2figs   := $data2.satmaps}}
+{{$data2mapgif := $data2.satmapgif}}
+{{$data3name   := $data3.casename}}
+{{$data3figs   := $data3.satmaps}}
+{{$data3mapgif := $data3.satmapgif}}
+{{$data4name   := $data4.casename}}
+{{$data4figs   := $data4.satmaps}}
+{{$data4mapgif := $data4.satmapgif}}
+
+<h3 class="text-center">{{ $title  }} </h3>
+<div class="sim-case">
+  <div class="containter">
+    <div class="row">
+      <div class="four-col">
+        <p>{{$data1.casename}}</p>
+      </div>
+      <div class="four-col">
+        <p>{{$data2.casename}}</p>
+      </div>
+      <div class="four-col">
+        <p>{{$data3.casename}}</p>
+      </div>
+      <div class="four-col">
+        <p>{{$data4.casename}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four-col">
+        <a href={{ $data1mapgif }}> <img src={{ $data1mapgif }} /> </a>
+      </div>    
+      <div class="four-col">
+        <a href={{ $data2mapgif }}> <img src={{ $data2mapgif }} /> </a>
+      </div>    
+      <div class="four-col">
+        <a href={{ $data3mapgif }}> <img src={{ $data3mapgif }} /> </a>
+      </div>    
+      <div class="four-col">
+        <a href={{ $data4mapgif }}> <img src={{ $data4mapgif }} /> </a>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="#{{ (.Get 2) }}" class="btn btn-info"  data-toggle="collapse"> Show/Hide Discrete Maps</a>
+<div id="{{ (.Get 2) }}" class="collapse">
+  <div class="sim-case">
+    <div class="containter">
+      <div class="row">
+        <div class="four-col">
+          <p>{{$data1.casename}}</p>
+        </div>
+        <div class="four-col">
+          <p>{{$data2.casename}}</p>
+        </div>
+        <div class="four-col">
+          <p>{{$data3.casename}}</p>
+        </div>
+        <div class="four-col">
+          <p>{{$data4.casename}}</p>
+        </div>
+      </div>
+      {{range $i, $sequence := (seq $maxindex) }}
+      <div class="row">
+        <div class=" four-col">
+          <a href={{ (index $data1figs $i) }}> <img src={{ (index $data1figs $i) }} /> </a>
+        </div>
+        <div class="four-col">
+          <a href={{ (index $data2figs $i) }}> <img src={{ (index $data2figs $i) }} /> </a>
+        </div>
+        <div class="four-col">
+          <a href={{ (index $data3figs $i) }}> <img src={{ (index $data3figs $i) }} /> </a>
+        </div>
+        <div class="four-col">
+          <a href={{ (index $data4figs $i) }}> <img src={{ (index $data4figs $i) }} /> </a>        
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>

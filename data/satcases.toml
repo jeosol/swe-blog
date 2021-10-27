@@ -1,0 +1,6 @@
+cases = [
+"natural1a",
+"coarseup",
+"coarsedown",
+"combination"
+]

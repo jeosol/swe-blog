@@ -1,0 +1,18 @@
+wcvstime = [
+ "/assets/petroleum/posts/watercutpred/images/kvkh0pt0/watercut-time.png",
+ "/assets/petroleum/posts/watercutpred/images/kvkh0pt1/watercut-time.png"
+]
+wcvscop = [
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt0/watercut-cop.png",
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/watercut-cop.png"
+]
+qopvstime = [
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt0/qop-time.png",
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/qop-time.png"
+]
+copvstime = [
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt0/cop-time.png",
+"/assets/petroleum/posts/watercutpred/images/kvkh0pt1/cop-time.png"
+]
+
+

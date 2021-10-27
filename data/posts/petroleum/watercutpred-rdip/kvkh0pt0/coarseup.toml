@@ -1,0 +1,18 @@
+casename = "Coarsening Up"
+satmaps = [
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-1.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-2.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-3.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-4.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-5.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-6.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-7.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-8.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-9.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-10.png", 
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-map-timestep-11.png", 
+]
+satmapgif = "/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satmaps/coarseup-satmaps.gif"
+satprofiles = [
+"/assets/petroleum/posts/watercutpred-rdip/images//kvkh0pt0/coarseup/satprofiles/saturation-profile.png",
+]

@@ -1,0 +1,44 @@
+{{$topdir := "/assets/petroleum/posts/watercutpred/images/perm-files"}}
+{{$filename1 := (.Get 0)}}
+{{$filename2 := (.Get 1)}}
+{{$filename3 := (.Get 2)}}
+{{$filename4 := (.Get 3)}}
+
+<div id="showpermprofiles"> <!-- class="collapse"> -->
+    <div class="container-fluid">
+        <div class="row">
+            <a id="1a"></a>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 figure">
+                <a href={{$topdir}}/{{$filename1}}><img src={{$topdir}}/{{$filename1}}
+                                                        alt="Permeability-depth profile for 'Natural' case"
+                                                       class="img-responsive center-block"/></a>
+                <p class="figure-caption">Figure 1a: Natural </p>
+            </div>
+            <a id="1b"></a>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 figure">
+                <a href={{$topdir}}/{{$filename2}}><img src={{$topdir}}/{{$filename1}}
+                                                        alt="Permeability-depth profile for 'Coarsen Up' case"
+                                                       class="img-responsive center-block"/></a>
+                <p class="figure-caption">Figure 1b: Coarsening Up - permeability decreasing with depth </p>
+            </div>
+            <a id="1c"></a>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 figure">
+                <a href={{$topdir}}/{{$filename3}}><img src={{$topdir}}/{{$filename1}}
+                                                        alt="Permeability-depth profile for 'Fining Up' case"
+                                                       class="img-responsive center-block"/></a>
+                
+                <p class="figure-caption">Figure 1c: Fining Up - permeability increasing with depth </p>
+            </div>
+            <a id="1d"></a>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 figure"> <!-- figure two-col"> -->
+                <a href={{$topdir}}/{{$filename4}}><img src={{$topdir}}/{{$filename1}}
+                                                alt="Permeability-depth profile for 'Combination' case"        
+                                                class="img-responsive center-block"/></a>
+                <p class="figure-caption">Figure 1d: Combination </p>
+            </div>
+            <!-- <p class="figure-caption">Figure 1: Different permeability vs. depth profiles. </p> -->
+        </div>
+    </div>
+</div>
+
+  

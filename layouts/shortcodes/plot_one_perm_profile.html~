@@ -1,0 +1,29 @@
+{{$postdir   := (.Get 0)}}
+{{$dir       := "/assets/petroleum/posts"}}
+{{$permdir   := "images/perm-files"}}
+{{$topdir    := (printf "%s/%s/%s" $dir $postdir $permdir)}} 
+{{$filename1  := (.Get 1)}}
+{{$figurelabel := (.Get 2)}}
+
+<br/>
+<div id="showpermprofiles"> <!-- class="collapse"> -->
+  <div class="panel panel-danger">
+    <div class="panel-heading text-center">
+      <p>Reservoir Permeability Profile vs. Depth</p>
+    </div>
+    <div class="panel-body text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <a id="1"></a>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a href={{$topdir}}/{{$filename1}}><img src={{$topdir}}/{{$filename1}}
+                                                    alt="Permeability-depth profile for 'Natural' case"
+                                                    class="img-responsive center-block"/></a>
+            <p class="figure-caption">{{$figurelabel}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

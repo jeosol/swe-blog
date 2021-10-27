@@ -1,0 +1,369 @@
+nav[data-toggle='toc'] {
+  margin-top: 30px;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override the Affix plugin so that the navigation isn't sticky */
+  nav.affix[data-toggle='toc'] {
+    position: static;
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle='toc'] .nav .active .nav {
+    display: none;
+  }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+}
+
+
+/*************************************************
+ *  Pseudo box-shadow
+ **************************************************/
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow:
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+
+/*************************************************
+ *  Sharing
+ **************************************************/
+
+.share-box {
+    float: left; /* right; */
+}
+
+ul.share {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+ul.share li {
+    display: inline-flex;
+    margin-right: 5px;
+}
+
+ul.share li:last-of-type {
+    margin-right: 0;
+}
+
+ul.share li .fa {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+    color: #fff;
+}
+
+ul.share li a {
+    background-color: #b5c6ce;
+    display: block;
+    border-radius: 50%;
+    text-decoration: none !important;
+    margin: 0;
+}
+
+ul.share li:hover .fa {
+    transform: scale(1.4)
+}
+
+/* Links business */
+a:hover {
+    color: red;
+}
+a:active {
+    color: orange;
+}
+a:visited {
+    color: purple;
+}
+/* **************************************************/
+.sim-case {
+    border: 1px red solid;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #141f1f;
+    position: relative;
+    max-width: 100%;
+
+}
+.sim-case p {
+    padding-bottom: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+.sim-case:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.sat-map {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-left: 1%;
+    float: left;
+    text-align: center;
+    display: block;
+
+
+}
+.four-col {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-left: 1%;
+    width: 25%;
+    float: left;
+    text-align: center;
+    display: block;
+    max-width: 25%;
+
+}
+
+.container {
+ width: 100%;
+ }
+
+.sat-map img {
+    width:  200px;
+    height: 100px;
+    border: 1px white solid;
+}
+#non-communicating-layers:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.figure-group {
+    margin: 30px 0px;
+    border: 1px red solid;
+    position: relative;
+    max-width: 100%;
+    position: relative;
+}
+.figure-group:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.figure {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    border: 0.5px dotted red;
+}
+
+img.figure {
+    width:  100%; /*350px; */
+    height: 100%;
+    border: 1px solid red;
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+imgx {
+    width:  100%; /*350px; */
+    height: 100%;
+    border: 1px white solid;
+    padding-left: 5px;
+    border: 0.5px dashed red;
+    padding-bottom: 20px;
+
+
+}
+
+.img-4-row {
+    width:  100%; /*350px; */
+    max-width: 100%;
+    height: 100%;
+        padding: 1%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+/* Figure labeling */
+.figure-header {
+    max-width: 80%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-top: 10px;
+    white-space: -moz-pre-wrap;
+}
+
+.figure-header-small {
+    max-width: 100%;
+    text-align: center;
+    font-size: 5px;
+    margin: 0 auto;
+    font-size: 120%;
+    paddint-top: 10px;
+    white-space: -moz-pre-wrap;
+}
+
+.figure-col-header {
+   width: 100%;
+   font-size: 120%;
+   text-align: center;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+
+}
+.figure-caption {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    white-space: -moz-pre-wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 120%;
+}
+
+.two-col {
+   width: 400px;
+   margin: 1% auto;
+   padding: 1%;
+   float :left;
+}
+
+
+.four-col {
+   width: 200px;
+   margin-left: 1%;
+}
+
+xdiv.four-col p {
+   font-width: bold;
+   font-size: 30px;
+}
+.xfour-col {
+   width: 90%;
+   padding-left: 5%;
+   padding-right: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+   position: relative;
+}
+
+.four-col img, .four-col px{
+    width: 200px;
+    margin: 0 auto;
+    margin-left: 1%;
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-right: 0px;
+}
+.figure p {
+    padding-bottom: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    color: black;
+}
+
+
+
+h2 {
+ padding-top: 25px;
+ padding-bottom: 10px;
+ }
+
+h3 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.fullmap {
+    width:  100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.array p {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+}
+
+span.highlight {
+    text-decoration: bold;
+    color: red;
+}
+
+@media screen and (max-width: 320px) {
+    .figure-header, h3 {
+        font-size: 100%;
+    }
+    .figure-caption {
+        .font-size: 80%;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .figure-header, h3 {
+        font-size: 100%;
+    }
+    .figure-caption {
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 412px) {
+    .figure-header,
+    h3,
+    .figure-caption {
+        font-size: 100%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .figure-caption {
+        font-size: 20px;
+    }
+    .share-box {
+        float: right;
+    }
+}

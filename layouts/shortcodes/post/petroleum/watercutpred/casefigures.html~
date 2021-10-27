@@ -1,0 +1,7 @@
+{{ $data := index .Site.Data.post.petroleum.watercutpred.kvkh0pt0 (.Get 0) }}
+<ul>
+{{ range $data.cases  }}
+<li> {{ . }} </li>
+{{ end }}
+</ul>
+
